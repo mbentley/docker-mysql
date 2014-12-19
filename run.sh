@@ -12,6 +12,7 @@ MYSQLD_ARGS=${MYSQLD_ARGS:---skip-name-resolve}
 
 temp_file=$(mktemp)
 if [[ ! -f "${temp_file}" ]]; then
+  echo "error: unable to create temp file; exiting"
   exit 1
 fi
 
