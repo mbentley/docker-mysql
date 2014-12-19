@@ -10,7 +10,7 @@ MYSQL_USER=${MYSQL_USER:-}
 MYSQL_PASSWORD=${MYSQL_PASSWORD:-}
 MYSQLD_ARGS=${MYSQLD_ARGS:---skip-name-resolve}
 
-tfile=$(mktemp)
+temp_file=$(mktemp)
 if [[ ! -f "${temp_file}" ]]; then
   exit 1
 fi
