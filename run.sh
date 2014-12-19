@@ -12,7 +12,7 @@ MYSQLD_ARGS=${MYSQLD_ARGS:---skip-name-resolve}
 
 tfile=$(mktemp)
 if [[ ! -f "${temp_file}" ]]; then
-  return 1
+  exit 1
 fi
 
 cat << EOF > ${temp_file}

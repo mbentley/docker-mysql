@@ -8,9 +8,9 @@ To pull this image:
 `docker pull mbentley/mysql`
 
 Example usage:
-`docker run -i -t -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=docker mbentley/mysql`
+`docker run -itd -p 3306:3306 -e MYSQL_ROOT_PASSWORD=docker mbentley/mysql`
 
-`docker run -i -t -d -p 3306:3306 -v /data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=docker -e MYSQL_DATABASE=docker -e MYSQL_USER=user1 -e MYSQL_PASSWORD=pass1 mbentley/mysql`
+`docker run -itd -p 3306:3306 -v /data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=docker -e MYSQL_DATABASE=docker -e MYSQL_USER=user1 -e MYSQL_PASSWORD=pass1 mbentley/mysql`
 
 
 The following environment variables can be passed to the docker image:
